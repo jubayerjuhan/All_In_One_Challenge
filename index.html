@@ -9,39 +9,46 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container-1">
+    <div class="main-ruler">
+        <div class="container-1">
 
-        <h2>Challenge: 1, Your Age In Days</h2>
-        <div class="flexbox-container-1">
-            
-            <div>
-                <button class="btn btn-primary" onclick="convertIntoDays()">Click Me</button>
+            <h2>Challenge: 1, Your Age In Days</h2>
+            <div class="flexbox-container-1">
+                
+                <div>
+                    <button class="btn btn-primary" onclick="convertIntoDays()">Click Me</button>
+                </div>
+
+                <div>
+                    <button class="btn btn-danger" onclick="resetTheValue()">Reset</button>
+                </div>
             </div>
 
-            <div>
-                <button class="btn btn-danger" onclick="resetTheValue()">Reset</button>
+            <div class="flexbox-container-1">
+                <div id="flexbox-result"></div>
             </div>
+
         </div>
 
-        <div class="flexbox-container-1">
-            <div id="flexbox-result"></div>
+
+        <div class="container-2">
+            <h2>Challenge 2 : Cat Generator</h2>
+            <button class="btn btn-success" id="green-button" onclick="addGif()">Generate Cat</button>
+            <div class="flexbox-container-2" id="cat-gen"></div>
+        </div>
+
+
+        <div class="container-3">
+            <h2>The Rock Paper Scissors Game</h2>
+
+            <div class="flexbox-rps" id="flexbox-rps-div">
+                <img src="./resources/rock.png" id="rock" alt="Rock" height="200px" width="200px" onclick="rpsGame(this)">
+                <img src="./resources/paper.png" id="paper" alt="paper" height="200px" width="200px" onclick="rpsGame(this)">
+                <img src="./resources/scissor.png" id="scissor" alt="scissor" height="200px" width="200px" onclick="rpsGame(this)">
+            </div>
         </div>
 
     </div>
-
-
-    <div class="container-2">
-        <h2>Challenge 2 : Cat Generator</h2>
-        <button class="btn btn-success" onclick="addGif()">Generate Cat</button>
-
-        <div class="flexbox-container-2" id="cat-gen">
-            
-        </div>
-
-
-    </div>
-
-
     <script src="./static/js/script.js"></script>
 </body>
 </html>
