@@ -88,3 +88,15 @@
 .computerdiv :hover{
     box-shadow: 0px 10px 50px 
 }
+
+.flexbox-buttonplay{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin : 0px auto;
+    justify-content: space-around;
+}
+
+.container-4{
+    margin-bottom: 16px;
+}
